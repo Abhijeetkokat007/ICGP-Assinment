@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light</title>
+</head>
+<style>
+    .img-off{
+        height: 500px;
+        margin:20px auto;
+        display: block
+    }
+    .btn-cont{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .btn-on{
+        width: 100px;
+        padding: 5px;
+    }
+</style>
+<body>
+    
+    <img class="img-off" id="img-off" src="./bulboff.png"/>
+
+    <div class="btn-cont">
+        <button class="btn-on" id="btn-on" onclick=" onbulb()">ON</button>
+        <button class="btn-on" id="btn-on" onclick=" offbulb()">OFF</button>
+    </div>
+
+    <script>
+        function onbulb(){
+            const onbulb =document.getElementById("img-off");
+           onbulb.src = "./bulbon.png";
+        }
+        function offbulb(){
+            const onbulb =document.getElementById("img-off");
+           onbulb.src = "./bulboff.png";
+        }
+
+    </script>
+</body>
+</html> 
